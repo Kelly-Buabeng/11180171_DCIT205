@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Of Ghana Computer Science Departmant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="1stwebpage.html"><img src="205-IA Images/University_of_Ghana.png"></a>
+      <div class="navigation">
+        <ul>
+          <li><a href="1stwebpage.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="contactpage.html">CONTACT US</a></li>
+          <li><a href="facilities.html">FACILITIES</a></li>
+          <li><a href="tryout.html">COMPLAINTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="placementpage.html">PLACEMENTS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="testimonial">
+      <div class="title-text">
+        <p>TESTIMONIAL</p><br><br>
+        <h1>Experiences from both lectures and students</h1><br>
+      </div>
+      <div class="testimonial-row">
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="205-IA Images/photo_2023-11-26_13-04-43.jpg">
+            <div class="user-info">
+              <h4>Appiah Kubi</h4>
+              <small>@appiahkubs</small>
+            </div>
+          </div>
+          <p>Choosing to study Computer Science at legon   was one of the best decisions I've made. The dedicated professors and innovative curriculum have not only broadened my knowledge but also sparked my passion for learning. The collaborative atmosphere among students has enriched my overall college experience, creating lasting memories and friendships</p>
+        </div>
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="205-IA Images/photo_2023-11-26_13-04-56.jpg">
+            <div class="user-info">
+              <h4>Janet Jamal</h4>
+              <small>@jannyjane</small>
+            </div>
+          </div>
+          <p>Studying Computer Science at University of Ghana has been an incredible journey. The engaging classes, supportive faculty, and vibrant campus environment made my college experience unforgettable. I feel well-prepared for my future, thanks to the quality education and opportunities I've encountered here.</p>
+        </div>
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="205-IA Images/photo_2023-11-26_13-04-49.jpg">
+            <div class="user-info">
+              <h4>Rahim Banda</h4>
+              <small>@rahimbanda</small>
+            </div>
+          </div>
+          <p>As a student and member of COMPSSA, I've found more than just an academic institution; I've discovered a second home. The caring faculty, diverse community, and numerous extracurricular activities have allowed me to grow personally and professionally. I am proud to be part of such an inspiring and supportive educational community.</p>
+        </div>
+      </div>
+      <a href="https://twitter.com/compssaug"class="homebutton">More</a>
+    </section>
+   
+  </section>
+</body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(205-IA\ Images/complogo.jpg);
+    background-position: center;
+    background-size: contain;
+    position: relative;
+  }
+  .text{
+    font-weight: 900;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 150px;
+  }
+  .navigation{
+    flex: 1;
+    text-align: right;
+  }
+  .navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+  }
+  .navigation ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .navigation ul li :hover::after{
+    width: 100%;
+  }
+  .testimonial{
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+  }
+  .testimonial-row{
+   width: 80%; 
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+  } 
+  .testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3 px gold;
+    cursor: pointer;
+    transition: transform .5s;
+  }
+  .testimonial-col p{
+    font-size:14 ;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .user img{
+    width: 50px;
+    margin-right: 30px;
+    border-radius:10px ;
+  }
+  .user-info small{
+    color: #009688;
+  }
+  .testimonial-col:hover{
+    transform: translateY(10px);
+  }
+  .homebutton{
+    display: inline-block;
+    text-decoration:none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+    align-items: center;
+  }
+  .homebutton:hover{
+    border: 1px solid gold;
+    background: gold;
+    transition: 1s;
+  }
+</style>
+</html>
