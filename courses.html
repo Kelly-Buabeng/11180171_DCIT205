@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Of Ghana Computer Science Departmant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="1stwebpage.html"><img src="205-IA Images/University_of_Ghana.png"></a>
+      <div class="navigation">
+        <ul>
+          <li><a href="1stwebpage.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="contactpage.html">CONTACT US</a></li>
+          <li><a href="facilities.html">FACILITIES</a></li>
+          <li><a href="tryout.html">COMPLAINTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="placementpage.html">PLACEMENTS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="courses">
+      <h1>Courses We Offer</h1>
+      <p class="text">We at the Computer Science Departmant in Legon offer a variety of courses that suitable for each and everyone irrespective of their eductional background</p>
+      <div class="row">
+        <div class="coursecol">
+          <h3>UNDERGRADUATE</h3>
+          <p>Our undergraduate courses open the door to sought-after technology careers</p>
+        </div>
+        <div class="coursecol">
+          <h3>GRADUATE</h3>
+          <p>Our garduate programes extend the boundaries of knowledge through quality and industry relevant research</p>
+        </div>
+        <div class="coursecol">
+          <h3>SHORT COURSES</h3>
+          <p>Our eight week intensive certificate course is open to senior high school graduates, tertiary students, school graduates, workers and the general public.</p><br><br>
+
+            <p>Evening and Weekend Sessions Only</p>
+        </div>
+      </div>   
+    </section>
+  </section>
+</body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(205-IA\ Images/complogo.jpg);
+    background-position: center;
+    background-size: contain;
+    position: relative;
+  }
+  .text{
+    font-weight: 900;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 150px;
+  }
+  .navigation{
+    flex: 1;
+    text-align: right;
+  }
+  .navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+  }
+  .navigation ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .navigation ul li :hover::after{
+    width: 100%;
+  }
+  .courses{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  h1{
+    color: #777;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .coursecol{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20 px 12px;
+    box-sizing: border-box;
+    background: #fff3f3;
+    transition: 0.5s;
+  }
+  h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .coursecol:hover{
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.2);
+  }
+</style>
+</html>
