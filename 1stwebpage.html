@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Of Ghana Computer Science Departmant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="1stwebpage.html"><img src="205-IA Images/University_of_Ghana.png"></a>
+      <div class="navigation">
+        <ul>
+          <li><a href="1stwebpage.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="contactpage.html">CONTACT US</a></li>
+          <li><a href="facilities.html">FACILITIES</a></li>
+          <li><a href="tryout.html">COMPLAINTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="placementpage.html">PLACEMENTS</a></li>
+        </ul>
+      </div>
+    </nav>
+  <div class="teaxtarea">
+    <hi>Welcome to the Ghana's Premier University,University Of Ghana</hi><p> The University of Ghana is one of the Africa's most preeminent public universities. Our impact on individuals, our region and the world is profound. whether we are launching young people into a boundless future or confronting the grand challenges of our time through dauntless research. UG educates more than 38,000students annually, with approximately 2.64% being computer science students. We turn ideas into impact and transform the world around us. For more about our impact, visit our news site, UG News.</p>
+    <a href="https://www.ug.edu.gh/"class="homebutton">Vist the University page to know more about us</a>
+  </div>
+  </section>
+
+</body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(205-IA\ Images/leg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 150px;
+  }
+  .navigation{
+    flex: 1;
+    text-align: right;
+  }
+  .navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+  }
+  .navigation ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .navigation ul li :hover::after{
+    width: 100%;
+  }
+  .teaxtarea{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .teaxtarea h1{
+    font-size: 62px;
+
+  }
+  .teaxtarea p{
+    margin: 10px 40px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .homebutton{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .homebutton:hover{
+    border: 1px solid gold;
+    background: gold;
+    transition: 1s;
+  }
+</style>
+</html>
