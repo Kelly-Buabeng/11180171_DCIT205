@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Of Ghana Computer Science Departmant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="1stwebpage.html"><img src="205-IA Images/University_of_Ghana.png"></a>
+      <div class="navigation">
+        <ul>
+          <li><a href="1stwebpage.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="contactpage.html">CONTACT US</a></li>
+          <li><a href="facilities.html">FACILITIES</a></li>
+          <li><a href="tryout.html">COMPLAINTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="placementpage.html">PLACEMENTS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section class="main-content">
+    <h2>Welcome to the Computer Science Department</h2>
+    <p>
+        This is the Information Technology age and at its core is Computer Science. The study of computer science is therefore critical if society is to take full advantage of the benefits Information Technology has to offer and make rapid economic advances. Computer science involves the study and development of applications that allow for our everyday use of computers, the software systems that support these applications, and the means and methods used to produce both applications and systems that behave reliably, correctly and ethically. At the heart of Computer Science lies the skill of computer programming and employers who hire Computer Scientists expect adept programmers with knowledge of current techniques and tools and the ability to apply sound engineering principles to the development, construction and maintenance of computer programs.
+    </p>
+    <p>
+        The range of courses available in the department and the skills acquired by students enable them to find employment in many diverse fields of the economy and prepare our graduates for the computing industry, working in a project team (or research and development team), and to enable the graduate to bring specialist skills to that team. The course also provides the platform for further study or research through exposure to established and emerging technologies and methods, and to active fields of research in Computer Science.
+    </p>
+    <p>
+        The Department offers two undergraduate degree programmes, Bachelor of Science in Computer Science Single-Major (3:2:1:1) and Major-Minor (3:2:2:1) as well as Bachelor of Science in Information Technology.
+    </p>
+</section>
+<footer>
+  <p>&copy; 2023 Computer Science Department</p>
+</footer>
+</body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header{
+    min-height: 10;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(205-IA\ Images/leg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 150px;
+  }
+  .navigation{
+    flex: 1;
+    text-align: right;
+  }
+  .navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+  }
+  .navigation ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .navigation ul li :hover::after{
+    width: 100%;
+  }
+  .main-content {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: rgba(255, 255, 255, 0.9);
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          color: black;
+          transition: box-shadow 0.3s ease-in-out;
+  }
+  .main-content h2 {
+          color: #333;
+  }
+  .main-content p {
+          line-height: 1.6;
+  }
+  footer {
+          font-weight: 900;
+          color: black;
+          text-align: center;
+          padding: 1rem;
+          position: relative;
+          bottom: 0;
+          width: 100%;
+  }
+
+  
+</style>
+</html>
