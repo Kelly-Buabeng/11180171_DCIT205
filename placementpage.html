@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Of Ghana Computer Science Departmant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="1stwebpage.html"><img src="205-IA Images/University_of_Ghana.png"></a>
+      <div class="navigation">
+        <ul>
+          <li><a href="1stwebpage.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="contactpage.html">CONTACT US</a></li>
+          <li><a href="facilities.html">FACILITIES</a></li>
+          <li><a href="tryout.html">COMPLAINTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="placementpage.html">PLACEMENTS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <div class="wrapper">
+    <form action="#">
+      <h2>Login</h2>
+        <div class="input-field">
+        <input type="text" required>
+        <label>Enter your StudentID</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required>
+        <label>Enter your Code</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot Code?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Click here to get an OTP</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header{
+    min-height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(205-IA\ Images/leg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 150px;
+  }
+  .navigation{
+    flex: 1;
+    text-align: right;
+  }
+  .navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+  }
+  .navigation ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .navigation ul li :hover::after{
+    width: 100%;
+  }
+  
+  .wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  color: black;
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: gold;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+}
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: black;
+}
+#remember {
+  accent-color: gold;
+}
+.forget label {
+  display: flex;
+  align-items: center;
+}
+.forget label p {
+  margin-left: 8px;
+}
+.wrapper a {
+  color: black;
+  text-decoration: none;
+}
+.wrapper a:hover {
+  text-decoration: underline;
+}
+button {
+  background: gold;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+button:hover {
+  color: black;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: gold;
+}
+</style>
+</html>
