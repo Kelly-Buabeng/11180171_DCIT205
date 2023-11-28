@@ -19,7 +19,7 @@
     <li>Testimonials</li>
   </ul>
 </p>
-<p>I built this webites using just html and css hence it basic and a bit old fashioned. As I buid my skill as time goes on I would love to include more features and functionalities to make it a world class site.</p>
+<p>I built this website using just html and css hence it basic and a bit old fashioned. As I buid my skill as time goes on I would love to include more features and functionalities to make it a world class site.</p>
 
 Here are the webpages listed above accompanied by some images:
 <h1>Contact Us</h1>
